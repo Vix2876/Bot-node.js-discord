@@ -21,11 +21,11 @@ const client = new Client({
 });
 
     const statuses = [
-        { name: 'najlepszy serwer na świecie https://discord.gg/GPdN7KrbAf', type: 1 },
-        { name: 'najlepszy serwer na świecie https://discord.gg/GPdN7KrbAf', type: 2 },
-        { name: 'najlepszy serwer na świecie https://discord.gg/GPdN7KrbAf', type: 3 },
-        { name: 'najlepszy serwer na świecie https://discord.gg/GPdN7KrbAf', type: 4 },
-        { name: 'najlepszy serwer na świecie https://discord.gg/GPdN7KrbAf', type: 5 },
+        { name: 'najlepszy serwer na świecie ', type: 1 }, //wstaw tutaj link do twojego serwera
+        { name: 'najlepszy serwer na świecie ', type: 2 }, //wstaw tutaj link do twojego serwera
+        { name: 'najlepszy serwer na świecie ', type: 3 }, //wstaw tutaj link do twojego serwera
+        { name: 'najlepszy serwer na świecie ', type: 4 }, //wstaw tutaj link do twojego serwera
+        { name: 'najlepszy serwer na świecie ', type: 5 }, //wstaw tutaj link do twojego serwera
        ];
     
     let index = 0;
@@ -45,9 +45,9 @@ const client = new Client({
         setInterval(updateStatus, 60000); // Zmieniaj status co minutę
     });
 
-const token = "MTI3MTYyNzU2MjY0ODYwNDY3Mg.GXeKAp.RCQTX8W7iLZE3TRccY8rmU7WnRJ0OkibMnCg4U"; // Wstaw swój token
-const WEATHER_API_KEY = 'e3313458d163fce19991344ba59bdb59';
-const LEAVE_CHANNEL_ID = "1286433856156860429"
+const token = ""; // Wstaw swój token
+const WEATHER_API_KEY = '';
+const LEAVE_CHANNEL_ID = ""
 
 const prefix = '!'; // prefiks dla komend
 const warningThreshold = 3; // liczba upomnień, po której zostanie nadana rola "Warned"
@@ -542,7 +542,7 @@ client.on('messageCreate', (message) => {
 // Event, który reaguje na dołączenie nowego użytkownika
 client.on('guildMemberAdd', async (member) => {
   // Wybierz kanał, do którego chcesz wysłać powitanie (wstaw ID kanału)
-  const channel = member.guild.channels.cache.get('1312345676342');
+  const channel = member.guild.channels.cache.get('');
   
   if (channel) {
     // Tworzymy embed z wiadomością powitalną i profilowym użytkownika
