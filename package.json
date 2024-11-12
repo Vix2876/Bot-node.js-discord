@@ -1,0 +1,20 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "bot by vix_2876",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vix_2876",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/voice": "^0.17.0",
+    "axios": "^1.7.7",
+    "discord.js": "^14.16.3",
+    "play-dl": "^1.9.7",
+    "yt-search": "^2.12.1",
+    "ytdl-core": "^4.11.5"
+  }
+
+}
